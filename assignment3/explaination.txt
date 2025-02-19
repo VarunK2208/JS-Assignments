@@ -1,0 +1,8 @@
+HOW CODE IS EXECUTED
+variables n , m and function sum and sum1 is stored in memory in the 1st phase .
+in the 2nd phase values are assigned to the variables and it invokes the function (function invoking is done in line 8)
+
+WORKING OF CALL STACK
+when the GEC(GLOBAL EXECUTION CONTEXT) is pushed inside the stack
+in the code if function is being invoked, the function is pushed inside this stack and when the function is executed it is popped out and the control/returns to GEC.
+similarly it happens with all the functions.
