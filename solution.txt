@@ -1,0 +1,4 @@
+Whole JS is done inside the Execution Context
+memory - it stores variables and functions in key value pairs and it is also called Variable environment
+Code - it is also called thread of the execution where each line is executed in a specific order 
+
