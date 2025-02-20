@@ -1,0 +1,2 @@
+Significance of JS 
+It is the popular programming language used for Web Development. JS makes the site dynamic and interactive. it is synchronous single threaded language i.e., only one line at a time is executed in a specific order. so many objects and methods are present in JS. we can makes changes in HTML by using DOM and BOM.
