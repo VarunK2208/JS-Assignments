@@ -18,7 +18,7 @@ var cc = 120;
     var cc = 10;  // 120 is shadowed by 10 and executed outside the block also
     let bv = 12;
     const cd = 22;
-    console.log(cc);
+    console.log(cc);        //this is a block scope
     console.log(bv);
     console.log(cd);
 
@@ -28,11 +28,16 @@ console.log(cc);
 const f = 35;
 function x() {
     const f = 45;
-    console.log(f);
+    console.log(f); //this is a block scope
 }
 x();
 console.log(f);
 
-
-
-
+// illegal shadowing
+// var can shadow let and const whereas const and let cannot shadow var as let and const are block scoped variables
+//correct way of implementing is using blocked scope 
+function test () {
+    var x = 12;
+    let x = 23;
+}
+test(); //shows syntax error
