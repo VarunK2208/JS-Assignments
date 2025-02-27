@@ -1,16 +1,15 @@
 //using fetch APi
 
 function RandomFt() {
-    return fetch("https://dog.ceo/api/breeds/image/random") 
+    return fetch("https://dummyjson.com/products") //fetched products from api
         .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
+            if (!response.ok) {    //if returns false if it doesnt fetch api
+                throw new Error(`HTTP error! Status: ${response.status}`);  //throws error 
             }
-            return response.json(); 
+            return response.json(); //comes in json format
         })
-        .then(data => console.log("Dog Image URL:", data.message)) 
-        .catch(error => console.error("Fetch error:", error.message));
+        .then(data => console.log("Products:", data.products))  //fetches data from above url 
+        .catch(error => console.error("Fetch error:", error.message)); // throws error if we make ani manipulations in data 
 }
 
-// Call the function
 RandomFt();
