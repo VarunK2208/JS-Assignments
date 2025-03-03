@@ -1,0 +1,2 @@
+Research and implement the Singleton or Factory pattern in JavaScript.
+
