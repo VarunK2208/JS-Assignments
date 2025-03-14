@@ -1,0 +1,24 @@
+with javascript runtime environment javascript can be run anywhere for eg: robots,smart watches, smart phone etc.
+javascript runtime environment consists JS engine,APIs and eventloops and queues.
+JS Engine is the heart of the JSRE.
+Browser and Node.JS has JSRE.
+Just In Time compilation in JS Engine can be Interpretter language or Compiler language
+
+JS Engine: 
+list of JS Engine:
+1. Chakra (Microsoft)
+2. SpiderMonkey (Firefox)
+3. V8 (Google Chrome) (Node.JS)
+
+JS Engine Architecture:
+code(input) -> parsing -> compilation -> Execution
+ 
+ Parsing - code is broken down into tokens
+Syntax Parser - converts token into AST(Abstract Syntax Tree)
+compilation and Execution goes hand in hand- Interpretter converts into bytecode and sends it to Execution
+
+Garbage Collector - clears space and it uses Mark & Sweep Algorithm
+
+Google v8 engine is the Fastest JS engine 
+Ignition is the V8's Interpretter and TurboFan is the Compiler
+Orinoco and oilpan are the Garbage Collectors.
